@@ -1,7 +1,7 @@
 /*
  * This is an example claret specification
  */
-systemName "SYSTEM_NAME"
+systemName "IFOOD"
 
 usecase "Compra" {
 	version "0.1" type "Compra" user "Luiz,Vinícius,Davi,Lucas" date "20/09/2019"
