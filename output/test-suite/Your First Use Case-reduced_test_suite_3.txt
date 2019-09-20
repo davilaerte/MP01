@@ -1,0 +1,22 @@
+/**
+ *	 >>> REDUCED TEST SUITE (Sim with Jaccard Index - Transition Coverage) <<<
+ *
+ * - Calculated Maximum Test Case Size: 1
+ *
+ * - Equation:
+ *
+ *     maxTestCaseSize = (b + max(a, e))/2
+ * 
+ *     where:
+ *       b (Total of Basic Flow Steps): 2
+ *       a (Total of Steps from Greater Alternative Flow): 0
+ *       e (Total of Steps from Greater Exception Flow): 0
+ *
+ * - Total of Generated Test Cases: 1
+ */
+
+Test Case: 1
+Precondition: first_condition. second_condition
+system actor does something -> SYSTEM responds to actor
+Postcondition: final condition. other condition
+
