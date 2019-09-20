@@ -3,20 +3,38 @@
  */
 systemName "SYSTEM_NAME"
 
-usecase "Your First Use Case" {
-	version "0.1" type "set_type" user "set_user" date "set_date"
+usecase "Compra" {
+	version "0.1" type "Compra" user "Luiz,Vinícius,Davi,Lucas" date "20/09/2019"
 	actor person "system actor"
 	
 	preCondition "first_condition", "second_condition"
 	
 	basic {
-		step 1 person "does something"
-		step 2 system "responds to actor"
+		step 1 person "Entra na loja online"
+		step 2 system "Mostra os restaurantes"
+		step 3 person "Escolhe o restaurante"
+		step 4 system "Exibe o cardápio do dia"
+		step 5 person "Escolhe o prato desejado"
+		step 6 system "Direciona para a área de finalização da compra"
+		step 7 person "Escolhe a forma de pagamento" af[1, 2]
+		step 8 system "Compra paga com sucesso" ef[1]
 	}
 	
 	// Alternatives scenarios here...
+	alternative 1 "Pagamento por cartão de crédito" {
+		step 1 person "Escolhe pagamento por cartão de crédito" bs 7
+	}
+	
+	alternative 2 "Pagamento por dinheiro" {
+		step 1 person "Escolhe pagamento por dinheiro" bs 7
+	}
+	
 	
 	// Exceptions scenarios here...
+	exception 1 "Pagamento não autorizado" {
+		step 1 system "Compra não autorizada pela operadora" bs 8
+	}
 	
-	postCondition "final condition", "other condition"
+	
+	postCondition "Compra efetuada com sucesso"
 }

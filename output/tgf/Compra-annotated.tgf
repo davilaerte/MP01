@@ -1,0 +1,51 @@
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 7
+8 8
+9 9
+10 10
+11 11
+12 12
+13 13
+14 14
+15 15
+16 16
+17 17
+18 18
+19 19
+20 20
+21 21
+22 22
+23 23
+24 24
+#
+1 12 conditions
+12 2 first_condition. second_condition
+2 13 steps
+13 3 system actor Entra na loja online
+3 14 expected_results
+14 4 system Mostra os restaurantes
+4 15 steps
+15 5 system actor Escolhe o restaurante
+5 16 expected_results
+16 6 system Exibe o cardápio do dia
+6 17 steps
+17 7 system actor Escolhe o prato desejado
+7 18 expected_results
+18 8 system Direciona para a área de finalização da compra
+8 19 steps
+19 9 system actor Escolhe a forma de pagamento
+9 20 expected_results
+20 10 system Compra paga com sucesso
+10 21 conditions
+21 11 Compra efetuada com sucesso
+8 22 steps
+22 8 system actor Escolhe pagamento por cartão de crédito
+8 23 steps
+23 8 system actor Escolhe pagamento por dinheiro
+9 24 expected_results
+24 9 system Compra não autorizada pela operadora
