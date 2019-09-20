@@ -1,0 +1,41 @@
+/**
+ *	 >>> COMPLETE TEST SUITE <<<
+ *
+ * - Calculated Maximum Test Case Size: 4
+ *
+ * - Equation:
+ *
+ *     maxTestCaseSize = (b + max(a, e))/2
+ * 
+ *     where:
+ *       b (Total of Basic Flow Steps): 8
+ *       a (Total of Steps from Greater Alternative Flow): 1
+ *       e (Total of Steps from Greater Exception Flow): 1
+ *
+ * - Total of Generated Test Cases: 3
+ */
+
+Test Case: 1
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 2
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 3
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+

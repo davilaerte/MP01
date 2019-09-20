@@ -59,7 +59,7 @@ graph
     [
         source 1
         target 2
-        label "[c] first_condition. second_condition"
+        label "[c] Usuário está logado no sistema"
     ]
     edge
     [
@@ -118,19 +118,19 @@ graph
     edge
     [
         source 8
-        target 8
+        target 9
         label "[s] system actor Escolhe pagamento por cartão de crédito"
     ]
     edge
     [
         source 8
-        target 8
+        target 9
         label "[s] system actor Escolhe pagamento por dinheiro"
     ]
     edge
     [
         source 9
-        target 9
-        label "[e] system Compra não autorizada pela operadora"
+        target 8
+        label "[e] system Compra não autorizada pela operadoraa"
     ]
 ]

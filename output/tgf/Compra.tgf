@@ -10,7 +10,7 @@
 10 10
 11 11
 #
-1 2 [c] first_condition. second_condition
+1 2 [c] Usuário está logado no sistema
 2 3 [s] system actor Entra na loja online
 3 4 [e] system Mostra os restaurantes
 4 5 [s] system actor Escolhe o restaurante
@@ -20,6 +20,6 @@
 8 9 [s] system actor Escolhe a forma de pagamento
 9 10 [e] system Compra paga com sucesso
 10 11 [c] Compra efetuada com sucesso
-8 8 [s] system actor Escolhe pagamento por cartão de crédito
-8 8 [s] system actor Escolhe pagamento por dinheiro
-9 9 [e] system Compra não autorizada pela operadora
+8 9 [s] system actor Escolhe pagamento por cartão de crédito
+8 9 [s] system actor Escolhe pagamento por dinheiro
+9 8 [e] system Compra não autorizada pela operadoraa

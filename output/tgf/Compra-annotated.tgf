@@ -24,7 +24,7 @@
 24 24
 #
 1 12 conditions
-12 2 first_condition. second_condition
+12 2 Usuário está logado no sistema
 2 13 steps
 13 3 system actor Entra na loja online
 3 14 expected_results
@@ -44,8 +44,8 @@
 10 21 conditions
 21 11 Compra efetuada com sucesso
 8 22 steps
-22 8 system actor Escolhe pagamento por cartão de crédito
+22 9 system actor Escolhe pagamento por cartão de crédito
 8 23 steps
-23 8 system actor Escolhe pagamento por dinheiro
+23 9 system actor Escolhe pagamento por dinheiro
 9 24 expected_results
-24 9 system Compra não autorizada pela operadora
+24 8 system Compra não autorizada pela operadoraa
