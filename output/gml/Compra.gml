@@ -117,6 +117,48 @@ graph
     ]
     edge
     [
+        source 4
+        target 5
+        label "[s] system actor Escolhe restaurante da lista de favoritos"
+    ]
+    edge
+    [
+        source 4
+        target 5
+        label "[s] system actor Escolhe restaurante da lista restaurantes abertos"
+    ]
+    edge
+    [
+        source 4
+        target 5
+        label "[s] system actor Escolhe o ultimo restaurante que comprou"
+    ]
+    edge
+    [
+        source 6
+        target 7
+        label "[s] system actor Escolhe prato do cardápio do restaurante"
+    ]
+    edge
+    [
+        source 6
+        target 7
+        label "[s] system actor Escolhe prato da lista de ultima compras"
+    ]
+    edge
+    [
+        source 7
+        target 6
+        label "[e] system Notifica cliente para auterar sua escolha com base no cardápio do dia"
+    ]
+    edge
+    [
+        source 7
+        target 4
+        label "[e] system Notifica cliente para selecionar outro restaurante"
+    ]
+    edge
+    [
         source 8
         target 9
         label "[s] system actor Escolhe pagamento por cartão de crédito"
@@ -131,6 +173,6 @@ graph
     [
         source 9
         target 8
-        label "[e] system Compra não autorizada pela operadoraa"
+        label "[e] system Compra não autorizada pela operadora"
     ]
 ]

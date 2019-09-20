@@ -20,6 +20,13 @@
 8 9 [s] system actor Escolhe a forma de pagamento
 9 10 [e] system Compra paga com sucesso
 10 11 [c] Compra efetuada com sucesso
+4 5 [s] system actor Escolhe restaurante da lista de favoritos
+4 5 [s] system actor Escolhe restaurante da lista restaurantes abertos
+4 5 [s] system actor Escolhe o ultimo restaurante que comprou
+6 7 [s] system actor Escolhe prato do cardápio do restaurante
+6 7 [s] system actor Escolhe prato da lista de ultima compras
+7 6 [e] system Notifica cliente para auterar sua escolha com base no cardápio do dia
+7 4 [e] system Notifica cliente para selecionar outro restaurante
 8 9 [s] system actor Escolhe pagamento por cartão de crédito
 8 9 [s] system actor Escolhe pagamento por dinheiro
-9 8 [e] system Compra não autorizada pela operadoraa
+9 8 [e] system Compra não autorizada pela operadora

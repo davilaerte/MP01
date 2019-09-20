@@ -12,27 +12,56 @@ usecase "Compra" {
 	basic {
 		step 1 person "Entra na loja online"
 		step 2 system "Mostra os restaurantes"
-		step 3 person "Escolhe o restaurante"
+		step 3 person "Escolhe o restaurante" af[1,2,3]
 		step 4 system "Exibe o cardápio do dia"
-		step 5 person "Escolhe o prato desejado"
-		step 6 system "Direciona para a área de finalização da compra"
-		step 7 person "Escolhe a forma de pagamento" af[1, 2]
-		step 8 system "Compra paga com sucesso" ef[1]
+		step 5 person "Escolhe o prato desejado" af[4,5]
+		step 6 system "Direciona para a área de finalização da compra" ef[1, 2]
+		step 7 person "Escolhe a forma de pagamento" af[6, 7]
+		step 8 system "Compra paga com sucesso" ef[3]
 	}
 	
 	// Alternatives scenarios here...
-	alternative 1 "Pagamento por cartão de crédito" {
+	alternative 1 "Restaurante da lista de favoritos" {
+		step 1 person "Escolhe restaurante da lista de favoritos" bs 4
+	}
+	
+	alternative 2 "Restaurante aberto" {
+		step 1 person "Escolhe restaurante da lista restaurantes abertos" bs 4
+	}
+	
+	
+	alternative 3 "Ultimos restaurante" {
+		step 1 person "Escolhe o ultimo restaurante que comprou" bs 4
+	}
+	
+	alternative 4 "Prato do restaurante" {
+		step 1 person "Escolhe prato do cardápio do restaurante" bs 6
+	}
+	
+	alternative 5 "Prato da lista de ultimas compras" {
+		step 1 person "Escolhe prato da lista de ultima compras" bs 6
+	}
+	
+	alternative 6 "Pagamento por cartão de crédito" {
 		step 1 person "Escolhe pagamento por cartão de crédito" bs 8
 	}
 	
-	alternative 2 "Pagamento por dinheiro" {
+	alternative 7 "Pagamento por dinheiro" {
 		step 1 person "Escolhe pagamento por dinheiro" bs 8
 	}
 	
 	
 	// Exceptions scenarios here...
-	exception 1 "Pagamento não autorizado" {
-		step 1 system "Compra não autorizada pela operadoraa" bs 7
+	exception 1 "Refeição não disponível" {
+		step 1 system "Notifica cliente para auterar sua escolha com base no cardápio do dia" bs 5
+	}
+	
+	exception 2 "Restaurante fechado" {
+		step 1 system "Notifica cliente para selecionar outro restaurante" bs 3
+	}
+	
+	exception 3 "Pagamento não autorizado" {
+		step 1 system "Compra não autorizada pela operadora" bs 7
 	}
 	
 	

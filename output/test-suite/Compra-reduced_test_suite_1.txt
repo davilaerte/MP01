@@ -12,13 +12,13 @@
  *       a (Total of Steps from Greater Alternative Flow): 1
  *       e (Total of Steps from Greater Exception Flow): 1
  *
- * - Total of Generated Test Cases: 3
+ * - Total of Generated Test Cases: 36
  */
 
 Test Case: 1
 Precondition: Usuário está logado no sistema
 system actor Entra na loja online -> SYSTEM Mostra os restaurantes
-system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
 system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
 system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
 Postcondition: Compra efetuada com sucesso
@@ -26,12 +26,276 @@ Postcondition: Compra efetuada com sucesso
 Test Case: 2
 Precondition: Usuário está logado no sistema
 system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 3
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 4
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 5
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 6
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 7
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 8
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 9
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 10
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 11
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 12
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 13
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 14
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 15
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
 system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
 system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
 system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
 Postcondition: Compra efetuada com sucesso
 
-Test Case: 3
+Test Case: 16
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 17
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 18
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 19
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 20
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 21
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 22
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 23
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 24
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 25
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 26
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 27
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 28
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 29
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista de favoritos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 30
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 31
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe a forma de pagamento -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 32
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato do cardápio do restaurante -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 33
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 34
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe o ultimo restaurante que comprou -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe prato da lista de ultima compras -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por dinheiro -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 35
+Precondition: Usuário está logado no sistema
+system actor Entra na loja online -> SYSTEM Mostra os restaurantes
+system actor Escolhe restaurante da lista restaurantes abertos -> SYSTEM Exibe o cardápio do dia
+system actor Escolhe o prato desejado -> SYSTEM Direciona para a área de finalização da compra
+system actor Escolhe pagamento por cartão de crédito -> SYSTEM Compra paga com sucesso
+Postcondition: Compra efetuada com sucesso
+
+Test Case: 36
 Precondition: Usuário está logado no sistema
 system actor Entra na loja online -> SYSTEM Mostra os restaurantes
 system actor Escolhe o restaurante -> SYSTEM Exibe o cardápio do dia

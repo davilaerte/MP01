@@ -22,6 +22,13 @@
 22 22
 23 23
 24 24
+25 25
+26 26
+27 27
+28 28
+29 29
+30 30
+31 31
 #
 1 12 conditions
 12 2 Usuário está logado no sistema
@@ -43,9 +50,23 @@
 20 10 system Compra paga com sucesso
 10 21 conditions
 21 11 Compra efetuada com sucesso
-8 22 steps
-22 9 system actor Escolhe pagamento por cartão de crédito
-8 23 steps
-23 9 system actor Escolhe pagamento por dinheiro
-9 24 expected_results
-24 8 system Compra não autorizada pela operadoraa
+4 22 steps
+22 5 system actor Escolhe restaurante da lista de favoritos
+4 23 steps
+23 5 system actor Escolhe restaurante da lista restaurantes abertos
+4 24 steps
+24 5 system actor Escolhe o ultimo restaurante que comprou
+6 25 steps
+25 7 system actor Escolhe prato do cardápio do restaurante
+6 26 steps
+26 7 system actor Escolhe prato da lista de ultima compras
+7 27 expected_results
+27 6 system Notifica cliente para auterar sua escolha com base no cardápio do dia
+7 28 expected_results
+28 4 system Notifica cliente para selecionar outro restaurante
+8 29 steps
+29 9 system actor Escolhe pagamento por cartão de crédito
+8 30 steps
+30 9 system actor Escolhe pagamento por dinheiro
+9 31 expected_results
+31 8 system Compra não autorizada pela operadora
